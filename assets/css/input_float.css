@@ -1,0 +1,41 @@
+/* JUMPING INPUT  */
+.input-container {
+  position: relative;
+  margin-bottom: 25px;
+}
+.input-container label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+  padding: 0px 5px;
+}
+.input-container input {
+  border: 1px solid #e0e0e0;
+  background: transparent;
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+  border-radius: 5px;
+}
+.input-container input:focus {
+  outline: none;
+  border: 1px solid #c5c5c5;
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+  top: -10px;
+  font-size: 12px;
+  background-color: #fff;
+}
+.input-container i {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #949494;
+}
+/* JUMPING INPUT  */
